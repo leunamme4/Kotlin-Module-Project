@@ -21,7 +21,7 @@ class Note(private val name: String, private val content: MutableList<String>, s
     }
 
     private val printContent: () -> Unit = {
-        println("Содержимое заметки '${name}': ")
+        println("\nСодержимое заметки '${name}': ")
         for (text in content) println(text)
     }
 }
